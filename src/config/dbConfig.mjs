@@ -9,6 +9,6 @@ export async function connectDB(){
         console.log('Conexion exitosa a MongoDB');
     } catch (error) {
         console.error('Error al conectar a MongoDB:', error);
-        ProcessingInstruction.exit(1);
+        process.exit(1);
     }
     }
